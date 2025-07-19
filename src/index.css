@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+@theme {
+  /* Custom Colors */
+  --color-main-bg: #ffffff;
+  --color-primary: #14b66d;
+  --color-primary-hover: #0f9a5b;
+
+  /* Add more colors as needed */
+}
