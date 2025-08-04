@@ -1,22 +1,12 @@
-import { Route, Routes } from "react-router-dom";
-import CategoryCard from "./components/CategoryCard";
-import UserManual from "./components/UserManual";
-import "./App.css";
+import ServicesCategory from "./components/ServicesCategory";
+import HowGwydeWorks from "./components/HowGwydeWorks";
 
 function App() {
   return (
-    <Routes>
-      <Route
-        path="/"
-        element={
-          <div>
-            <CategoryCard />
-            <UserManual />
-          </div>
-        }
-      />
-      {/* Add more routes here as needed */}
-    </Routes>
+    <div className="App bg-gradient-to-br from-cyan-100 to-blue-200 min-h-screen">
+      <ServicesCategory />
+      <HowGwydeWorks />
+    </div>
   );
 }
 
