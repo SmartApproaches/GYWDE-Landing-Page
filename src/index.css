@@ -1,14 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-}
 
-@theme {
+
+:root {
+  font-family:'Work Sans';
+  
+
+
   /* Custom Colors */
-  --color-main-bg: #ffffff;
-  --color-primary: #14b66d;
-  --color-primary-hover: #0f9a5b;
+  --background: rgba(255, 255, 255, 1);
+  --background-secondary : rgba(230, 245, 249, 1);
+  --primary: #0096C1;
+  --primary-hover:red;
+  --border-color: #f0f0f0;
+  --nav-bg: rgba(255, 255, 255, 0.4);
+
+
+
+  /* text colors */
+  --text-primary: #000000;
+  --text-secondary: rgba(0, 0, 0, 1);
+  --text-success: #21A601;
 
   /* Add more colors as needed */
+
+
 }
+
