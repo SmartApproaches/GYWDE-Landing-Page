@@ -1,5 +1,5 @@
 import { useState } from "react";
-// Import your SVG files from the centralized index.js
+// Import SVG files from the centralized index.js
 import { userManualIcon, pdfIcon, youtubeIcon } from "../constants/images";
 
 const HowGwydeWorks = () => {
@@ -18,7 +18,7 @@ const HowGwydeWorks = () => {
       ),
       action: () => {
         console.log("Opening manual videos");
-        // Add your video opening logic here
+        // Add video opening logic here
       },
     },
     {
@@ -29,20 +29,19 @@ const HowGwydeWorks = () => {
       ),
       action: () => {
         console.log("Opening PDF manual");
-        // Add your PDF opening logic here
+        // Add PDF opening logic here
       },
     },
   ];
 
   const handleOptionClick = (option) => {
     option.action();
-    setIsOpen(false); // Close dropdown after selection
+    setIsOpen(false);
   };
 
   return (
     <div className="max-w-6xl mx-auto px-4 md:px-8 pb-4 md:pb-8">
       <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
-        {/* Left Panel - Only show when dropdown is open */}
         {isOpen && (
           <div className="w-full lg:w-80 lg:flex-shrink-0">
             <div className="bg-blue-100 bg-opacity-70 rounded-3xl p-6 md:p-8 h-full">

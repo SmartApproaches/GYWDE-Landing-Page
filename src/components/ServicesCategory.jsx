@@ -1,5 +1,5 @@
 import { useState } from "react";
-// Import your SVG files from the centralized index.js
+// Import SVG files from the centralized index.js
 import {
   fashionIcon,
   itDigitalIcon,
@@ -116,7 +116,6 @@ const ServicesCategory = () => {
     <div className={`${isOpen ? "min-h-screen" : ""}`}>
       <div className="max-w-6xl mx-auto px-4 md:px-8 pt-4 md:pt-8">
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
-          {/* Left Panel - Only show when dropdown is open */}
           {isOpen && (
             <div className="w-full lg:w-80 lg:flex-shrink-0">
               <div className="bg-blue-100 bg-opacity-70 rounded-3xl p-6 md:p-8 h-full">
