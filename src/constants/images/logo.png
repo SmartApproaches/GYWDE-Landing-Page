@@ -1,0 +1,15 @@
+/* Logo */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10.03px;
+
+position: absolute;
+width: 127.76px;
+height: 40.11px;
+left: 156px;
+top: 102px;
+
