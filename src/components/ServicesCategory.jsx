@@ -108,57 +108,86 @@ const ServicesCategory = () => {
 
   const handleCategoryClick = (category) => {
     console.log("Selected category:", category);
-    // Handle category selection here
-    setIsOpen(false); // Close dropdown after selection
+    setIsOpen(false);
   };
 
   return (
-    <div className={`${isOpen ? "min-h-screen" : ""}`}>
-      <div className="max-w-6xl mx-auto px-4 md:px-8 pt-4 md:pt-8">
-        <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
-          {isOpen && (
-            <div className="w-full lg:w-80 lg:flex-shrink-0">
-              <div className="bg-blue-100 bg-opacity-70 rounded-3xl p-6 md:p-8 h-full">
-                <div className="flex items-center gap-3 mb-4 md:mb-6">
-                  <div className="w-8 h-8 md:w-10 md:h-10 bg-teal-500 rounded-lg flex items-center justify-center">
-                    <img
-                      src={allServicesIcon}
-                      alt="All Services"
-                      className="w-4 h-4 md:w-6 md:h-6"
-                    />
-                  </div>
-                  <h2 className="text-xl md:text-2xl font-bold text-gray-800">
-                    By Category
-                  </h2>
-                </div>
-                <p className="text-gray-700 text-base md:text-lg leading-relaxed">
-                  Find service providers that suit a certain project category
-                </p>
+    <div
+      className="relative"
+      style={{
+        width: "1418.98828125px",
+        height: "721.8778076171875px",
+        background: "#FFFFFF",
+      }}
+    >
+      <div className="relative">
+        <div className="flex">
+          {/* Left Panel - By Category */}
+          <div
+            style={{
+              width: "460.91448974609375px",
+              height: "271.2327575683594px",
+              top: "60.41px",
+              left: "51.35px",
+              borderRadius: "32.62px",
+              background: "#E6F5F9",
+              position: "absolute",
+              opacity: isOpen ? 1 : 0,
+              visibility: isOpen ? "visible" : "hidden",
+              transition: "opacity 0.3s ease, visibility 0.3s ease",
+            }}
+            className="flex flex-col justify-center items-start p-8"
+          >
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 bg-teal-500 rounded-lg flex items-center justify-center">
+                <img
+                  src={allServicesIcon}
+                  alt="All Services"
+                  className="w-6 h-6"
+                />
               </div>
+              <h2 className="text-2xl font-bold text-gray-800">By Category</h2>
             </div>
-          )}
+            <p className="text-gray-700 text-lg leading-relaxed">
+              Find service providers that suit a certain project category
+            </p>
+          </div>
 
-          {/* Right Panel - Category Dropdown */}
-          <div className="flex-1">
-            <div className="relative">
+          {/* Right Panel - Categories Display */}
+          <div
+            style={{
+              width: "882.5635986328125px",
+              height: "726.7105102539062px",
+              top: "0px",
+              left: "537.63px",
+              background: "#DBF7FF",
+              position: "absolute",
+            }}
+          >
+            <div className="relative h-full">
               {/* Dropdown Trigger */}
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="w-full bg-white rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow duration-300 border-2 border-teal-200 hover:border-teal-300"
+                className="absolute top-6 left-6 right-6 bg-white rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 border-2 border-teal-200 hover:border-teal-300"
+                style={{
+                  opacity: !isOpen ? 1 : 0,
+                  visibility: !isOpen ? "visible" : "hidden",
+                  transition: "opacity 0.3s ease, visibility 0.3s ease",
+                }}
               >
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-4">
                     <img
                       src={allServicesIcon}
                       alt="All Services"
-                      className="w-8 h-8 md:w-12 md:h-12"
+                      className="w-12 h-12"
                     />
-                    <span className="text-lg md:text-xl font-semibold text-gray-800">
+                    <span className="text-xl font-semibold text-gray-800">
                       Select Category
                     </span>
                   </div>
                   <svg
-                    className={`w-5 h-5 md:w-6 md:h-6 text-gray-400 transition-transform duration-200 ${
+                    className={`w-6 h-6 text-gray-400 transition-transform duration-200 ${
                       isOpen ? "rotate-180" : ""
                     }`}
                     fill="none"
@@ -175,47 +204,59 @@ const ServicesCategory = () => {
                 </div>
               </button>
 
-              {/* Dropdown Menu */}
-              {isOpen && (
-                <div className="absolute top-full left-0 right-0 mt-2 bg-white rounded-2xl md:rounded-3xl shadow-lg border-2 border-teal-200 z-10 max-h-96 overflow-y-auto">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 p-4">
-                    {categories.map((category) => (
-                      <button
-                        key={category.id}
-                        onClick={() => handleCategoryClick(category)}
-                        className="flex flex-col items-center text-center p-4 rounded-xl hover:bg-gray-50 transition-colors duration-200"
-                      >
-                        <div className="mb-2">{category.icon}</div>
-                        <h3 className="text-sm md:text-base font-semibold text-teal-600">
-                          {category.title}
-                        </h3>
-                      </button>
-                    ))}
+              {/* Categories Grid */}
+              <div
+                style={{
+                  width: "797.6835327148438px",
+                  height: "614.955322265625px",
+                  top: "60.41px",
+                  left: "41.88px",
+                  position: "absolute",
+                  display: "grid",
+                  gridTemplateRows: "repeat(3, 1fr)",
+                  gridTemplateColumns: "repeat(3, 1fr)",
+                  rowGap: "10.27px",
+                  columnGap: "15.71px",
+                  opacity: isOpen ? 1 : 0,
+                  visibility: isOpen ? "visible" : "hidden",
+                  transition: "opacity 0.3s ease, visibility 0.3s ease",
+                }}
+              >
+                {categories.map((category) => (
+                  <button
+                    key={category.id}
+                    onClick={() => handleCategoryClick(category)}
+                    className="flex flex-col items-center justify-center text-center p-6 rounded-2xl bg-white hover:bg-gray-50 transition-colors duration-200 shadow-sm hover:shadow-md"
+                  >
+                    <div className="mb-3">{category.icon}</div>
+                    <h3 className="text-base font-semibold text-teal-600">
+                      {category.title}
+                    </h3>
+                  </button>
+                ))}
 
-                    {/* All Services Option */}
-                    <button
-                      onClick={() =>
-                        handleCategoryClick({
-                          id: "all",
-                          title: "All Services",
-                        })
-                      }
-                      className="flex flex-col items-center text-center p-4 rounded-xl bg-cyan-100 hover:bg-cyan-200 transition-colors duration-200"
-                    >
-                      <div className="mb-2">
-                        <img
-                          src={allServicesIcon}
-                          alt="All Services"
-                          className="w-8 h-8 md:w-12 md:h-12"
-                        />
-                      </div>
-                      <h3 className="text-sm md:text-base font-semibold text-teal-600">
-                        All Services
-                      </h3>
-                    </button>
+                {/* All Services Option */}
+                <button
+                  onClick={() =>
+                    handleCategoryClick({
+                      id: "all",
+                      title: "All Services",
+                    })
+                  }
+                  className="flex flex-col items-center justify-center text-center p-6 rounded-2xl bg-cyan-100 hover:bg-cyan-200 transition-colors duration-200 shadow-sm hover:shadow-md border-2 border-cyan-200"
+                >
+                  <div className="mb-3">
+                    <img
+                      src={allServicesIcon}
+                      alt="All Services"
+                      className="w-8 h-8 md:w-12 md:h-12"
+                    />
                   </div>
-                </div>
-              )}
+                  <h3 className="text-base font-semibold text-teal-600">
+                    All Services
+                  </h3>
+                </button>
+              </div>
             </div>
           </div>
         </div>
