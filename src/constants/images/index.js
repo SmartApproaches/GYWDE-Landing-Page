@@ -9,8 +9,3 @@ export { default as transportIcon } from "./transport-and-logistics.svg";
 export { default as repairIcon } from "./repair-and-maintenance.svg";
 export { default as creativeIcon } from "./creative-designs.svg";
 export { default as allServicesIcon } from "./all-services.svg";
-
-// UserManual icons
-export { default as userManualIcon } from "./ix_user-manual.svg";
-export { default as pdfIcon } from "./material-icon-theme_pdf.svg";
-export { default as youtubeIcon } from "./logos_youtube-icon.svg";
