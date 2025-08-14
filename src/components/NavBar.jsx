@@ -9,31 +9,48 @@ function NavBar() {
 
   return (
     <>
-      <nav className="wrapper mx-auto fixed top-[48px]  z-50 px-4 sm:px-6 md:px-8 lg:px-16 py-2 md:py-3 lg:py-5 w-full rounded-full place-self-center border border-[var(--border-color)] bg-[var(--nav-bg/10)] backdrop-blur-md">
+      <nav className="fixed top-[48px] w-full lg:w-auto z-50 px-4 sm:px-6 md:px-8 lg:px-16 py-2 md:py-3 lg:py-5  rounded-full place-self-center border border-[var(--border-color)] bg-[var(--nav-bg/10)] backdrop-blur-md">
 
-        <div className="flex md:flex items-center justify-between gap-2">
+        <div className="flex items-center justify-between gap-10 ">
           <div className="shrink-0">
-            <img src={logo} alt="Brand-Logo" />
+            <img src={logo} alt="Brand-Logo" className="w-16 md:w-24 lg:w-32" />
           </div>
 
-          <div className="hidden md:hidden lg:flex items-center  md:flex-nowrap md:whitespace-nowrap lg:gap-[92.99px]">
-            <div className="flex text-sm lg:text-base gap-4 lg:gap-[26.07px] ">
-              <Link to="/Service" className="flex   items-center gap-1 hover:text-[var(--primary)] transition delay-100 duration-300 ease-out hover:scale-95">
+          <div className="hidden lg:flex items-center  md:flex-nowrap md:whitespace-nowrap lg:gap-20">
+            <div className="flex text-sm lg:text-base gap-4 lg:gap-5">
+              <Link
+                to="/Service"
+                className="flex   items-center gap-1 hover:text-[var(--primary)] transition delay-100 duration-300 ease-out hover:scale-95"
+              >
                 Service Category
-                <FaChevronDown className=" mt-[1px]" />
+                <FaChevronDown className=" mt-[2px]" />
               </Link>
-              <Link to="/howItWorks" className="flex items-center gap-1 hover:text-[var(--primary)] transition delay-100 duration-300 ease-out hover:scale-95">
+              <Link
+                to="/howItWorks"
+                className="flex items-center gap-1 hover:text-[var(--primary)] transition delay-100 duration-300 ease-out hover:scale-95"
+              >
                 How gywde Works
-                <FaChevronDown className=" mt-[1px]" />
+                <FaChevronDown className=" mt-[2px]" />
               </Link>
-              <Link to="/about" className="hover:text-[var(--primary)] transition delay-100 duration-300 ease-out hover:scale-95 ">About Us</Link>
+              <Link
+                to="/about"
+                className="hover:text-[var(--primary)] transition delay-100 duration-300 ease-out hover:scale-95 "
+              >
+                About Us
+              </Link>
             </div>
 
             <div className="flex items-center gap-2 lg:gap-[20.86px]">
-              <Link to="/login" className="font-medium hover:text-[var(--primary)] transition delay-100 duration-300 ease-out hover:scale-95">
+              <Link
+                to="/login"
+                className="font-medium hover:text-[var(--primary)] transition delay-100 duration-300 ease-out hover:scale-95"
+              >
                 Login
               </Link>
-              <Link to=" /signUp" className="font-medium hover:text-[var(--primary)] transition delay-100 duration-300 ease-out hover:scale-95">
+              <Link
+                to=" /signUp"
+                className="font-medium hover:text-[var(--primary)] transition delay-100 duration-300 ease-out hover:scale-95"
+              >
                 Sign Up
               </Link>
 
@@ -47,9 +64,9 @@ function NavBar() {
 
           <button
             onClick={() => setMenuOpen((prev) => !prev)}
-            className="lg:hidden  text-[var(--text-primary)] z-50"
+            className="lg:hidden text-[var(--text-primary)] z-50"
           >
-            {MenuOpen ? <MdClose sixe={32} /> : <MdMenu size={24} />}
+            {MenuOpen ? <MdClose size={24} /> : <MdMenu size={24} />}
           </button>
 
           {/* mobile menu */}
