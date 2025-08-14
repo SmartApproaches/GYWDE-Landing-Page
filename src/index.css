@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'tailwindcss';
+:root {
+  font-family:'Work Sans';
+  /* colors */
+  --color-main-bg: #FFFFFF;
+  --color-primary: #14B66D;
+  --color-primary-hover: #0F9A5B;
+  --color-background-one: #001E27;
+  --color-background-two: #E6F5F9;
+  --color-primary-main :#0096C1;
+  --color-card: rgba(255, 255, 255, 1);
+  --primary-light:rgba(0, 124, 160, 1);
+  --card-border: rgba(240, 240, 240, 1);
+}
