@@ -1,4 +1,5 @@
-import React from "react";
+
+import React, { useState, useRef, useEffect } from "react";
 import Fashion from "../constants/images/Fashion.svg";
 import Services from "../constants/images/ItServices.svg";
 import Agriculture from "../constants/images/Agriculture.svg";
@@ -97,6 +98,37 @@ const services = [
 ];
 
 export default function ServicesCard() {
+  const [text, setText] = useState("");
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState("");
+  const dropdownRef = useRef(null);
+
+  const handleTyping = (e) => setText(e.target.value);
+
+  const uniqueCats = Array.from(new Set(services.map((s) => s.category)));
+  const categories = ["all", ...uniqueCats];
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+        setDropdownOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const filteredServices = services.filter((service) => {
+    const search = text.toLowerCase();
+    const matchesText = service.title.toLowerCase().includes(search);
+    const matchesCategoryText = service.category.toLowerCase().includes(search);
+    const matchesSelected =
+      selectedCategory && selectedCategory !== "all"
+        ? service.category === selectedCategory
+        : true;
+    return matchesSelected && (matchesText || matchesCategoryText);
+  });
+
   return (
     <section className="container mx-auto relative">
       <div
@@ -112,20 +144,44 @@ export default function ServicesCard() {
       </div>
 
       <div className="flex justify-between mx-4 mt-12 items-center">
-        <div className="relative">
-          <div className="w-8 h-8">
+        <div className="relative" ref={dropdownRef}>
+          <button onClick={() => setDropdownOpen(!dropdownOpen)}>
             <img src={Thortle} alt="Filter" className="w-8 h-8" />
-          </div>
+          </button>
+          {dropdownOpen && (
+            <div className="absolute mt-2 bg-white border rounded h-50 overflow-scroll shadow-lg z-10">
+              {categories.map((cat) => (
+                <div
+                  key={cat}
+                  className={`px-4 py-2 cursor-pointer hover:bg-gray-100 ${
+                    selectedCategory === cat ? "font-bold" : ""
+                  }`}
+                  onClick={() => {
+                    setSelectedCategory(cat === "all" ? "" : cat);
+                    setDropdownOpen(false);
+                  }}
+                >
+                  {cat === "all"
+                    ? "All"
+                    : cat.charAt(0).toUpperCase() + cat.slice(1)}
+                </div>
+              ))}
+            </div>
+          )}
         </div>
 
         <div className="border w-[40vw] border-[#F0F0F0] pl-5 pr-5 rounded-full flex items-center gap-2 py-2.5">
           <img className="w-8 h-8" src={Search} alt="Search icon" />
-          <div className="flex-grow border-transparent px-3 py-2 rounded w-full focus:outline-none focus:ring-0 bg-transparent pointer-events-none select-none">
-            Search Service Categories
-          </div>
-          <div className="bg-[#0096C1] text-white px-4 py-1 rounded select-none">
+          <input
+            type="text"
+            value={text}
+            onChange={handleTyping}
+            placeholder="Search Service Categories"
+            className="flex-grow border-transparent px-3 py-2 rounded w-full focus:outline-none focus:ring-0"
+          />
+          <button className="bg-[#0096C1] text-white px-4 py-1 rounded">
             Search
-          </div>
+          </button>
         </div>
 
         <div className="flex gap-3 w-[3rem] h-[3rem]">
@@ -133,23 +189,29 @@ export default function ServicesCard() {
           <img className="w-full h-full" src={List} alt="list view" />
         </div>
       </div>
-
+  
       <div className="px-4 grid grid-cols-2 md:grid-cols-4 gap-10 pt-10">
-        {services.map((service) => (
-          <div
-            key={service.id}
-            className="flex flex-col items-center rounded-3xl border border-[var(--card-border)] hover:border-[var(--primary-light)] bg-[var(--color-card)] hover:bg-[var(--color-background-two)] p-6 md:p-8 transition-all"
-          >
-            <img
-              src={service.image}
-              alt={service.title}
-              className="w-12 h-12 md:w-16 md:h-16 object-contain mb-4"
-            />
-            <h3 className="text-center font-medium text-[var(--primary-light)] text-base md:text-lg leading-snug break-words mt-2">
-              {service.title}
-            </h3>
+        {filteredServices.length === 0 ? (
+          <div className="col-span-full text-center text-gray-500">
+            No records found.
           </div>
-        ))}
+        ) : (
+          filteredServices.map((service) => (
+            <div
+              key={service.id}
+              className="flex flex-col items-center rounded-3xl border border-[var(--card-border)] hover:border-[var(--primary-light)] bg-[var(--color-card)] hover:bg-[var(--color-background-two)] p-6 md:p-8 transition-all"
+            >
+              <img
+                src={service.image}
+                alt={service.title}
+                className="w-12 h-12 md:w-16 md:h-16 object-contain mb-4"
+              />
+              <h3 className="text-center font-medium text-[var(--primary-light)] text-base md:text-lg leading-snug break-words mt-2">
+                {service.title}
+              </h3>
+            </div>
+          ))
+        )}
       </div>
     </section>
   );
