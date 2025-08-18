@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router-dom";
-import ServicesCategory from "./components/ServicesCategory";
+import AboutUsSection from "./components/AboutUsSection";
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<ServicesCategory />} />
+      <Route path="/" element={<AboutUsSection />} />
     </Routes>
   );
 }
