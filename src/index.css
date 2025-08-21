@@ -15,18 +15,18 @@
   --secondary: rgba(0, 45, 58, 1);
   --primary: #0096C1;
   --primary-hover:red;
+  --light-primary: #02ADDE33;
   --border-color: #f0f0f0;
   --nav-bg: rgba(255, 255, 255, 0.4);
   --gradient-border: linear-gradient(90deg, #BAF0FF, #DBF7FF, #BAF0FF);
+
 
 
   /* text colors */
   --text-primary: #000000;
   --text-secondary: rgba(0, 0, 0, 1);
   --text-success: #21A601;
+  --text-tertiary: #AEAEAE;
 
   /* Add more colors as needed */
-
-
 }
-
