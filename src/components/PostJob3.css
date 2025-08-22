@@ -29,8 +29,10 @@ body {
 }
 
 .title {
+  font: work Sans;
   font-size: 50px;
-  font-weight: bolder;
+  font-weight: 700;
+  size: 78.81%;
   height: auto;
   top: 200px;
   font-weight: bold;
@@ -42,6 +44,7 @@ body {
 }
 
 .subtitle {
+  font: work Sans;
   font-size: 18px;
   color: #0f0f0f;
   margin-bottom: 20px;
@@ -75,6 +78,7 @@ body {
 }
 
 .question {
+  color: #002D3A;
   font-weight: bold;
   font-size: 18px;
   margin: 0;
