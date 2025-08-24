@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useEffect } from "react";
 import Fashion from "../constants/images/Fashion.svg";
 import Services from "../constants/images/ItServices.svg";
@@ -189,7 +188,7 @@ export default function ServicesCard() {
           <img className="w-full h-full" src={List} alt="list view" />
         </div>
       </div>
-  
+
       <div className="px-4 grid grid-cols-2 md:grid-cols-4 gap-10 pt-10">
         {filteredServices.length === 0 ? (
           <div className="col-span-full text-center text-gray-500">
