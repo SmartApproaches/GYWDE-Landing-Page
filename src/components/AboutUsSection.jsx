@@ -2,16 +2,19 @@ import { mapbase } from "../constants/images";
 function AboutUsSection() {
   return (
     <>
-      <div
-        className="min-h-screen flex items-center justify-center px-4"
-        style={{
-          backgroundImage: `url(${mapbase})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          backgroundColor: "#f9f9f9",
-        }}
-      >
+     <div
+  className="relative w-full max-w-[1439px] h-auto md:h-[468px] mx-auto"
+  style={{
+    top: "13px",
+    left: "1px",
+    opacity: 1,
+    backgroundImage: `url(${mapbase})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundColor: "#f9f9f9",
+  }}
+>
         <div className="text-center max-w-4xl mx-auto relative z-10">
           {/* About Us label */}
           <div className="mb-8 flex justify-center">
@@ -41,11 +44,13 @@ function AboutUsSection() {
                   backgroundSize: "4px 4px",
                   backgroundPosition: "0 0, 2px 2px",
                   borderRadius: "inherit",
+                   marginTop: "210px",
                 }}
               />
               <span
                 className="relative z-10"
                 style={{
+                  
                   width: "72px",
                   height: "24px",
                   display: "flex",
@@ -59,6 +64,7 @@ function AboutUsSection() {
                   color: "#001E27",
                   opacity: 1,
                   whiteSpace: "nowrap",
+                 
                 }}
               >
                 About Us
@@ -83,7 +89,8 @@ function AboutUsSection() {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              margin: "0 auto",
+             marginTop: "50px",
+  marginLeft: "100px",
             }}
           >
             We are Redefining Service Connections
