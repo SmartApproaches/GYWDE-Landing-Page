@@ -27,7 +27,7 @@ function HeroSection() {
             and flawlessly.
           </p>
 
-          <div className="flex flex-row gap-4 lg:gap-8 items-center justify-start mt-4 md:mt-2 w-full">
+          <div className="flex flex-row gap-4 lg:gap-8 items-center justify-center lg:justify-start mt-4 md:mt-2 w-full">
             <Link className="w-full sm:w-auto ">
               <button className="w-full py-3 px-8 lg:px-15 whitespace-nowrap text-xs md:text-lg  bg-[var(--primary)] text-white rounded-md md:rounded-xl hover:bg-[var(--secondary)] transition delay-100 duration-300 ease-out hover:scale-95">
                 Find a Talent
