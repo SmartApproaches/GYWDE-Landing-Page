@@ -337,8 +337,6 @@ export default function CategoriesDetails() {
             ))}
           </div>
         </div>
-
-        {/* ready to hire */}
         <div className="bg-[#E6F5F9] rounded-lg py-3 px-4 mt-10 mx-5 md:mx-0">
           <div className="mt-5 grid w-full grid-cols-1 gap-5 md:grid-cols-2">
             <div className="md:ml-17">
