@@ -3,14 +3,15 @@ import { Link } from "react-router-dom";
 import { FaChevronDown } from "react-icons/fa";
 import { useState } from "react";
 import { MdClose, MdMenu } from "react-icons/md";
+import ServicesCategory from "./ServicesCategory";
 
 function NavBar() {
   const [MenuOpen, setMenuOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false); // NEW
 
   return (
     <>
       <nav className="fixed top-[48px] w-full lg:w-auto z-50 px-4 sm:px-6 md:px-8 lg:px-16 py-2 md:py-3 lg:py-5  rounded-full place-self-center border border-[var(--border-color)] bg-[var(--nav-bg/10)] backdrop-blur-md">
-
         <div className="flex items-center justify-between gap-10 ">
           <div className="shrink-0">
             <img src={logo} alt="Brand-Logo" className="w-16 md:w-24 lg:w-32" />
@@ -18,13 +19,25 @@ function NavBar() {
 
           <div className="hidden lg:flex items-center  md:flex-nowrap md:whitespace-nowrap lg:gap-20">
             <div className="flex text-sm lg:text-base gap-4 lg:gap-5">
-              <Link
-                to="/Service"
-                className="flex   items-center gap-1 hover:text-[var(--primary)] transition delay-100 duration-300 ease-out hover:scale-95"
+              <div
+                className="relative"
+                onMouseEnter={() => setDropdownOpen(true)}
+                onMouseLeave={() => setDropdownOpen(false)}
               >
-                Service Category
-                <FaChevronDown className=" mt-[2px]" />
-              </Link>
+                {/* Trigger */}
+                <div className="flex items-center gap-1 cursor-pointer hover:text-[var(--primary)] transition delay-100 duration-300 ease-out hover:scale-95">
+                  Service Category
+                  <FaChevronDown className="mt-[2px]" />
+                </div>
+                {/* Dropdown container */}
+                {dropdownOpen && (
+                  <div
+                    className="absolute left-0 mt-2 bg-white rounded-xl shadow-lg transition-all duration-300 z-50"
+                  >
+                    <ServicesCategory />
+                  </div>
+                )}
+              </div>
               <Link
                 to="/howItWorks"
                 className="flex items-center gap-1 hover:text-[var(--primary)] transition delay-100 duration-300 ease-out hover:scale-95"
