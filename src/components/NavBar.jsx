@@ -19,6 +19,7 @@ function NavBar() {
 
           <div className="hidden lg:flex items-center  md:flex-nowrap md:whitespace-nowrap lg:gap-20">
             <div className="flex text-sm lg:text-base gap-4 lg:gap-5">
+              {/* Wrap trigger and dropdown in a parent div */}
               <div
                 className="relative"
                 onMouseEnter={() => setDropdownOpen(true)}
@@ -32,12 +33,13 @@ function NavBar() {
                 {/* Dropdown container */}
                 {dropdownOpen && (
                   <div
-                    className="absolute left-0 mt-2 bg-white rounded-xl shadow-lg transition-all duration-300 z-50"
+                    className="absolute left-0 top-full bg-white rounded-xl shadow-lg transition-all duration-300 z-50"
                   >
                     <ServicesCategory />
                   </div>
                 )}
               </div>
+              
               <Link
                 to="/howItWorks"
                 className="flex items-center gap-1 hover:text-[var(--primary)] transition delay-100 duration-300 ease-out hover:scale-95"
