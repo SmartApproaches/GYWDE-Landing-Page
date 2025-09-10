@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 function HeroSection() {
   return (
-    <section className="max-w-6xl mx-auto min-h-screen pt-28 md:pt-35 lg:pt-50 px-4 md:px-12 overflow-x-hidden">
+    <section className="max-w-6xl mx-auto pt-28 md:pt-35 lg:pt-50 px-4 md:px-12 overflow-x-hidden">
       <div className="flex-col md:flex-row items-center justify-between gap-8 ">
         <motion.div
           className="text-center md:text-center lg:text-left relative z-10"
