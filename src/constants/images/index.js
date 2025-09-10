@@ -12,3 +12,12 @@ export { default as transportIcon } from "./transport-and-logistics.svg";
 export { default as repairIcon } from "./repair-and-maintenance.svg";
 export { default as creativeIcon } from "./creative-designs.svg";
 export { default as allServicesIcon } from "./all-services.svg";
+//GYWDE-HOME SECTION Images
+export {default as applePlay} from "../images/applePlay.svg";
+export {default as googlePlay} from "../images/googlePlay.svg";
+export {default as plainPhone} from "../images/plainPhone.svg";
+export {default as splashScreenPhone} from "../images/splashScreenPhone.svg";
+export {default as signUpPhone} from "../images/signUpPhone.svg";
+export {default as exploreServicesPhone} from "../images/exploreServicesPhone.svg";
+export {default as perfectMatchPhone} from "../images/perfectMatchPhone.svg";
+export {default as successPhone} from "../images/successPhone.svg";

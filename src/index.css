@@ -19,6 +19,9 @@
   --border-color: #f0f0f0;
   --nav-bg: rgba(255, 255, 255, 0.4);
   --gradient-border: linear-gradient(90deg, #BAF0FF, #DBF7FF, #BAF0FF);
+  --pill-bg: rgba(240, 240, 240, 0.3);
+  --pill-border: 1px solid rgba(240, 240, 240, 1);
+
 
 
 
