@@ -68,7 +68,7 @@ function GetYourWorkDone() {
                 return (
                   <div
                     key={index}
-                    className="flex flex-col mr-40 lg:mr-0 md:mb-5"
+                    className="flex flex-col mr-32 md:mr-20 lg:mr-0 md:mb-5"
                   >
                     <h3 className="flex font-bold text-[22.71px] lg:text-2xl mb-1 lg:mb-2 leading-[1.5] whitespace-nowrap lg:whitespace-normal">
                       {item.title}
@@ -85,7 +85,7 @@ function GetYourWorkDone() {
                             <img
                               src={descriptionImage.src}
                               alt={item.title}
-                              className="w-[250px] h-[50px] lg:w-auto lg:h-auto object-contain"
+                              className="w-[350px] h-[50px] md:w-auto md:h-auto object-contain"
                             />
                           </a>
                         ))}
@@ -100,23 +100,22 @@ function GetYourWorkDone() {
               })}
             </div>
           </div>
-          <div className="image-div relative flex justify-center lg:justify-end lg:w-auto lg:h-auto place-items-center -mt-20 lg:py-15">
-            <div className="absolute bg-[var(--light-primary)] w-40 h-40 md:size-50 lg:w-70  lg:h-70 rounded-full lg:top-1/5 lg:-translate-x-1/2 lg:-translate-y-1/6 z-1">
-            <div className=" shadow absolute -bottom-[50px] md:-bottom-[120px] left-1/2 lg:left-1/4 lg:w-[150px] lg:h-[5px] bg-black/20 blur-sm rounded-full z-0"></div>
+          <div className="image-div relative flex justify-center lg:justify-end lg:w-auto lg:h-auto place-items-center -mt-20 lg:py-15 ">
+            <div className="absolute bg-[var(--light-primary)] mx-4 w-40 h-40  lg:w-70  lg:h-70 rounded-full lg:top-1/5 lg:-translate-x-1/2 lg:-translate-y-1/6 z-1">
+            <div className="shadow absolute -bottom-[50px] md:-bottom-[70px] lg:-bottom-[80px] xl:-bottom-[120px] left-1/4 md:left-1/5 lg:left-1/3 xl:left-1/4 w-[60px] h-[3px] md:w-[75px] md:h-[3px] lg:w-[120px] xl:w-[150px] xl:h-[5px] bg-black/20 blur-sm rounded-full"></div>
             </div>
-            {/* top-0 lg:-top-1/6  lg:-translate-x-1/2 lg:-translate-y-1/2 z-5 */}
+          
             <img
               src={plainPhone}
-              className=" relative phone-image size-[350px] md:w-lg md:h-lg lg:w-auto lg:h-auto lg:-top-[70px] lg:align-center -left-1/10 md:-left-1/6 lg:-left-0 place-self-center z-50"
+              className=" relative phone-image size-[350px] md:w-auto md:h-auto object-contain lg:-top-[60px] xl:-top-[70px] md:align-center -left-1/10 lg:-left-1/8 xl:-left-0 place-self-center z-5"
               alt="Step phone"
 
             />
-            {/* lg:top-0 lg:left-1/2 lg:-translate-x-1/2  lg:-translate-y-1/2 */}
 
             
           </div>
         </div>
-        <div className="lg:place-self-end place-self-center mt-8 lg:-mt-15 border border-[var(--primary)] rounded-md px-6 py-2 hover:scale-95 transition delay-100 duration-300 ease-out hidden lg:block">
+        <div className="md:place-self-end place-self-center mt-8 mx-4 md:-mt-15 border border-[var(--primary)] rounded-md px-6 py-2 hover:scale-95 transition delay-100 duration-300 ease-out hidden md:block">
           <Link to="/vendor">
             <button className="flex text-[var(--primary)] font-regular text-sm lg:text-md items-center gap-2">
               Vendor{" "}
