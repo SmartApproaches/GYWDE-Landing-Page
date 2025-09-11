@@ -10,7 +10,7 @@ function AboutUs() {
   return (
     <>
       <div className="max-w-6xl mx-auto py-10 flex flex-col justify-between ">
-        <h1 className="px-4 xl:px-12 font-bold text-3xl lg:text-6xl leading-[1.5] uppercase lg:text-[40px] text-[#CACACA] font-semibold text-center md:text-start">
+        <h1 className="mx-4 md:mx-8 font-bold text-3xl lg:text-6xl leading-[1.5] uppercase lg:text-[40px] text-[#CACACA] font-semibold text-center md:text-start">
           About Us
         </h1>
         <div className="flex  justify-between md:gap-10 flex-col xl:flex-row  ">
@@ -27,7 +27,7 @@ function AboutUs() {
             </div>
           </div>
 
-          <div className="text-area lg:flex-col gap-4 lg:gap-8 xl:max-w-xl xl:mt-10 mx-4 xl:px-0  py-5 md:py-0 -mt-25 md:-mt-40 lg:-mt-70 ">
+          <div className="text-area mx-4 md:mx-8 lg:flex-col gap-4 lg:gap-8 xl:max-w-xl xl:mt-10 mx-4 xl:px-0  py-5 md:py-0 -mt-25 md:-mt-40 lg:-mt-70 ">
             <h1 className="text-[var(--primary)] flex text-center md:text-start font-bold text-3xl md:text-[36px] lg:text-[45px] xl:text-[55px] leading-[1.5] mb-2">
               We are Redefining Service Connections
             </h1>
@@ -39,7 +39,7 @@ function AboutUs() {
             </p>
           </div>
         </div>
-        <div className="flex justify-between mx-4  flex-col-reverse lg:flex-row gap-5 xl:gap-2 items-center lg:-mt-25 xl:-mt-60 mt-5 md:mt-10">
+        <div className="flex justify-between mx-4 md:mx-8 flex-col-reverse lg:flex-row gap-5 xl:gap-2 items-center lg:-mt-25 xl:-mt-60 mt-5 md:mt-10">
           <div className="xl:max-w-md mx- xl:px-4 xl:mx-12 mt-5 md:w-auto  lg:w-lg text-start justify-center  md:items-center ">
             
             <span>
