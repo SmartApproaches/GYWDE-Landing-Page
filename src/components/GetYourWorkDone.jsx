@@ -49,12 +49,12 @@ function GetYourWorkDone() {
   return (
     <>
       <div className="max-w-6xl mx-auto py-5 md:py-10 flex flex-col justify-between">
-        <h1 className="px-4 md:px-12 text-center md:text-left font-bold text-3xl lg:text-6xl leading-[1.5]">
+        <h1 className="mx-4 md:mx-8 text-center md:text-left font-bold text-3xl lg:text-6xl leading-[1.5]">
           Get Your Work Done <br /> Effortlessly-
         </h1>
 
         <div className="flex flex-col-reverse md:flex-row items-center justify-between mt-10 md:mt-5 align-center gap-10 lg:gap-0">
-          {/* LEFT: Progress + text */}
+          
           <div className="text-scroll md:flex px-4 md:px-12 gap-4 lg:gap-10 w-screen lg:w-auto">
             <div className="progress-bar relative w-auto h-2 md:w-3 md:h-auto lg:h-[605px] bg-[var(--background)] rounded-full mb-5">
               <div
@@ -115,7 +115,7 @@ function GetYourWorkDone() {
             
           </div>
         </div>
-        <div className="md:place-self-end place-self-center mt-8 mx-4 md:-mt-15 border border-[var(--primary)] rounded-md px-6 py-2 hover:scale-95 transition delay-100 duration-300 ease-out hidden md:block">
+        <div className="md:place-self-end place-self-center mt-8 mx-4 md:mx-8 md:-mt-15 border border-[var(--primary)] rounded-md px-6 py-2 hover:scale-95 transition delay-100 duration-300 ease-out hidden md:block">
           <Link to="/vendor">
             <button className="flex text-[var(--primary)] font-regular text-sm lg:text-md items-center gap-2">
               Vendor{" "}
