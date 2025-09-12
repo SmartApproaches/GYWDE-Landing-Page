@@ -11,14 +11,16 @@
 
   /* Custom Colors */
   --background: rgba(255, 255, 255, 1);
-  --background-secondary : rgba(230, 245, 249, 1);
+  --background-secondary : #e6f5f9;
   --secondary: rgba(0, 45, 58, 1);
-  --primary: #0096C1;
+  --primary: rgb(0, 150, 193);
+  --lighter-bg: rgba(186, 240, 255, 1);
   --primary-hover:red;
   --light-primary: #02ADDE33;
   --border-color: #f0f0f0;
   --nav-bg: rgba(255, 255, 255, 0.4);
   --gradient-border: linear-gradient(90deg, #BAF0FF, #DBF7FF, #BAF0FF);
+  
 
 
 
@@ -27,6 +29,7 @@
   --text-secondary: rgba(0, 0, 0, 1);
   --text-success: #21A601;
   --text-tertiary: #AEAEAE;
+  --text-other: rgba(0, 172, 221, 0.3);
 
   /* Add more colors as needed */
 }
