@@ -2,9 +2,7 @@
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-}
 
-@theme {
   /* Custom Colors */
   --color-main-bg: #ffffff;
   --color-primary: #14b66d;
@@ -12,3 +10,5 @@
 
   /* Add more colors as needed */
 }
+
+
