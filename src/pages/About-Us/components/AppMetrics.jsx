@@ -3,11 +3,18 @@ import { MdStarOutline } from "react-icons/md";
 const AppMetrics = () => {
   return (
     <div
-      style={{ top: "250px", position: "relative" }}
-      className="bg-gradient-to-r from-[#BAF0FF] via-[#DBF7FF] to-[#BAF0FF] rounded-2xl md:rounded-3xl w-2xs md:w-full h-full mb-10 mt-10 md:mt-16 md:mb-12 lg:p-0.5 place-self-center"
+        className="
+    relative  /* keeps position: relative */
+    top-[0px] sm:top-[0px] md:top-[0px]  /* mobile, tablet, desktop */
+    bg-gradient-to-r from-[#BAF0FF] via-[#DBF7FF] to-[#BAF0FF] 
+    rounded-2xl md:rounded-3xl w-full max-w-[1192px] mx-auto h-full 
+    mb-10 mt-10 md:mt-16 md:mb-12 lg:p-0.5
+  "
     >
-      <div className="bg-white flex flex-col md:flex-row justify-between items-center gap-[48px] md:gap-5 w-2xs md:w-full h-full p-4 md:p-6 rounded-2xl md:rounded-3xl">
-        <div className="flex items-center gap-2 items-center">
+      <div className="bg-white flex flex-col md:flex-row justify-center md:justify-between items-center gap-4 sm:gap-6 md:gap-5 w-full h-full p-4 md:p-6 rounded-2xl md:rounded-3xl">
+
+        {/* Active Users */}
+        <div className="flex items-center flex-col sm:flex-row gap-1 md:gap-2 text-center md:text-left">
           <span className="font-bold text-[33.21px] lg:text-5xl text-[var(--secondary)]">
             5k+
           </span>
@@ -15,7 +22,9 @@ const AppMetrics = () => {
             Active Users
           </span>
         </div>
-        <div className="flex items-center gap-2 items-center">
+
+        {/* Countries Served */}
+        <div className="flex items-center flex-col sm:flex-row gap-1 md:gap-2 text-center md:text-left">
           <span className="font-bold text-[33.21px] lg:text-5xl text-[var(--secondary)]">
             30
           </span>
@@ -24,7 +33,8 @@ const AppMetrics = () => {
           </span>
         </div>
 
-        <div className="flex items-center gap-2">
+        {/* Average Rating */}
+        <div className="flex items-center flex-col sm:flex-row gap-1 md:gap-2 text-center md:text-left">
           <span className="flex items-center font-bold text-[33.21px] lg:text-5xl text-[var(--secondary)] gap-1">
             4.2 <MdStarOutline size={30} className="md:size-8" />
           </span>
@@ -32,8 +42,10 @@ const AppMetrics = () => {
             Average Rating App
           </span>
         </div>
+
       </div>
     </div>
   );
 };
+
 export default AppMetrics;
