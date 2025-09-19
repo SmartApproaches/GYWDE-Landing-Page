@@ -1,7 +1,8 @@
-export {default as logo} from "../images/logo.svg"
-export {default as globe} from "../images/globe.svg"
-export {default as RingOne} from "../images/RingOne.svg"
+
 export {default as RingTwo} from "../images/RingTwo.svg"
+// // ABOUT US SECTION Images
+export {default as worldMap} from "../images/worldMap.svg";
+export {default as videoThumbNail} from "../images/videoThumbNail.svg"
 //CategorCard icons
 export { default as fashionIcon } from "./fashion.svg";
 export { default as itDigitalIcon } from "./it-and-digital-services.svg";
@@ -16,3 +17,4 @@ export { default as allServicesIcon } from "./all-services.svg";
 export { default as userManualIcon } from "./ix_user-manual.svg";
 export { default as pdfIcon } from "./material-icon-theme_pdf.svg";
 export { default as youtubeIcon } from "./logos_youtube-icon.svg";
+
