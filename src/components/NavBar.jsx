@@ -76,7 +76,7 @@ function NavBar() {
                 Sign Up
               </Link>
 
-              <Link to="/PostAJob" className="font-normal">
+              <Link to="/post-job" className="font-normal">
                 <button className="bg-(--primary) text-white px-4 py-2 rounded-[10px] ">
                   Post a Job
                 </button>
