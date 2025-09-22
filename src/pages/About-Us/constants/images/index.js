@@ -10,3 +10,6 @@ export { default as mdi_arm_flex_outline } from "./mdi_arm_flex_outline.svg";
 export { default as ic_baseline_gpp_good  } from "./ic_baseline_gpp_good.svg";
 export { default as fluent_diversity_20_filled  } from "./fluent_diversity_20_filled.svg";
 export { default as tdesign_money  } from "./tdesign_money.svg";
+
+//FAQ image
+export { default as faqImage } from "./faqImage.svg";
