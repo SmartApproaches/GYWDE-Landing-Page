@@ -30,6 +30,26 @@ export { default as menuIcon } from "./menu.svg";
 export { default as searchIcon } from "./search-outline.svg";
 export { default as listIcon } from "./list.svg";
 export { default as mapBaseIcon } from "./map-base.svg";
+export { default as clipIcon } from "./clip-path-group.svg";
+export { default as webIcon } from "./web-dev.svg";
+export { default as itSupportIcon } from "./it-support.svg";
+export { default as cloudServicesIcon } from "./cloud-services.svg";
+export { default as dataAnalysisIcon } from "./data-analysis.svg";
+export { default as frameIcon } from "./frame.svg";
+export { default as ellipseIcon } from "./ellipse9.svg";
+export { default as ellipseTopIcon } from "./ellipse-top.svg";
+export { default as clockIcon } from "./clock.svg";
+export { default as talentIcon } from "./global-talent.svg";
+export { default as communicationIcon } from "./seamless-communication.svg";
+export { default as secureIcon } from "./secure-payment.svg";
+export { default as professionalIcon } from "./vetted-professional.svg";
+export { default as adaIcon } from "./ada.svg";
+export { default as andreIcon } from "./andre.svg";
+export { default as emekaIcon } from "./emeka.png";
+export { default as starIcon } from "./star2.svg";
+export { default as uchechiIcon } from "./uchechi.svg";
+export { default as locationIcon } from "./location.png";
+export { default as nairaIcon } from "./naira.svg";
 
 // UserManual icons
 export { default as userManualIcon } from "./ix_user-manual.svg";
