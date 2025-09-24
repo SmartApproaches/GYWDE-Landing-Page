@@ -140,14 +140,14 @@ export default function TechnologyDetails() {
     <section>
       <NavBar />
       <section className="px-5 md:px-40">
-        <div className="mt-[2.7rem] font-bold text-black">
+        {/* <div className="mt-[2.7rem] font-bold text-black">
           Gywde &gt; Category &gt; IT &amp; Digital Services
-        </div>
+        </div> */}
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="md:hidden block">
             <img className="w-full h-full" src={clipIcon} alt="menu" />
           </div>
-          <div className="w-12/12">
+          <div className="w-12/12 mt-20">
             <p className="text-[2rem] md:text-[4.8rem] font-bold text-[#0096c1] mt-10">
               Hire Expert
               <br />
