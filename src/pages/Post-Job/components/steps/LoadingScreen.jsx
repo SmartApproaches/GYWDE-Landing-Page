@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Logo from "../../assets/Logo.svg";
+import Ellipse10 from "../../assets/Ellipse 10.svg";
 
 const LoadingScreen = () => {
   const sizes = [6, 10, 14, 16, 18];
@@ -7,11 +9,11 @@ const LoadingScreen = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-white relative">
       <div className="absolute top-6 left-6 flex items-center space-x-2">
-        <img src="src/assets/Logo.svg" alt="Gywde" className="h-6" />
+        <img src={Logo} alt="Gywde" className="h-6" />
       </div>
 
       <img
-        src="src/assets/Ellipse 10.svg"
+        src={Ellipse10}
         className="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 opacity-50"
         alt="Blue ring background"
       />

@@ -17,7 +17,7 @@ const BriefForm = () => {
     <div className="relative min-h-screen bg-white text-gray-900 overflow-hidden">
 
         <div className="relative max-w-2xl mx-auto px-6 py-5 ml-16 pt-15">
-        <img src="src/assets/Logo.svg" alt="Gywde" className="h-10" />
+        <img src="src/pages/Post-Job/assets/Logo.svg" alt="Gywde" className="h-10" />
       </div>
 
       <img
