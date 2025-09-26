@@ -21,7 +21,7 @@ const FAQSection = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  // Motion variants for left and right sections
+  // Motion variants
   const leftVariants = {
     hidden: { opacity: 0, x: -100 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
@@ -33,10 +33,10 @@ const FAQSection = () => {
   };
 
   return (
-    <div className="w-full px-4 md:px-12 py-12 flex flex-col md:flex-row items-center gap-10">
+    <div className="w-full px-4 md:px-12 py-12 flex flex-col md:flex-row items-center md:items-center gap-10">
       {/* Left Section - FAQ Text */}
       <motion.div
-        className="w-full md:w-1/2"
+        className="w-full md:w-1/2 flex flex-col justify-center"
         variants={leftVariants} 
         initial="hidden" 
         whileInView="visible" 
@@ -62,7 +62,7 @@ const FAQSection = () => {
                 </span>
               </button>
 
-              {/* Answer (only visible when open) */}
+              {/* Answer */}
               {openIndex === index && (
                 <p className="mt-2 text-gray-600 text-sm">{faq.answer}</p>
               )}
@@ -71,9 +71,9 @@ const FAQSection = () => {
         </div>
       </motion.div>
 
-      {/* Right Section - Image */}
+      {/* Right Section - Image (hidden on mobile) */}
       <motion.div
-        className="hidden md:flex w-full md:w-1/2 justify-center"
+        className="hidden md:flex md:w-1/2 justify-center items-center"
         variants={rightVariants} 
         initial="hidden" 
         whileInView="visible" 
