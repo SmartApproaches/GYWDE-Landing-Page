@@ -15,7 +15,7 @@ const Layout = ({ step, nextStep, prevStep, handleSubmit, children }) => {
         </div>
 
         <h1 className="text-5xl font-extrabold leading-tight mb-3">
-          Tell us what you need <span className="text-[#0096C1]">done.</span>
+          Tell us what you<br/> need <span className="text-[#0096C1]">done.</span>
         </h1>
 
         <p className="text-gray-600 mb-4 max-w-xl">
