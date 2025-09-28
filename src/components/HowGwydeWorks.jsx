@@ -1,5 +1,5 @@
 import { userManualIcon, pdfIcon, youtubeIcon } from "../constants/images";
-import { ChevronRight } from "lucide-react";
+import { LuChevronRight } from "react-icons/lu";
 
 const HowGwydeWorks = () => {
   const manualOptions = [
@@ -52,7 +52,7 @@ const HowGwydeWorks = () => {
                 {option.title}
               </span>
             </div>
-            <ChevronRight className="w-5 h-5 text-gray-600" />
+            <LuChevronRight className="w-5 h-5 text-gray-600" />
           </button>
         ))}
       </div>

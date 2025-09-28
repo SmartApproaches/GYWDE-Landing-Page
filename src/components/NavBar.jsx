@@ -1,4 +1,4 @@
-import { logo } from "../constants/images";
+import { mainLogo } from "../constants/images";
 import { Link } from "react-router-dom";
 import { FaChevronDown } from "react-icons/fa";
 import { useState } from "react";
@@ -16,7 +16,7 @@ function NavBar() {
       <nav className="fixed top-[48px] w-full lg:w-auto z-50 px-4 sm:px-6 md:px-8 lg:px-16 py-2 md:py-3 lg:py-5  rounded-full place-self-center border border-[var(--border-color)] bg-[var(--nav-bg/10)] backdrop-blur-md">
         <div className="flex items-center justify-between gap-10 ">
           <div className="shrink-0">
-            <img src={logo} alt="Brand-Logo" className="w-16 md:w-24 lg:w-32" />
+            <img src={mainLogo} alt="Brand-Logo" className="w-16 md:w-24 lg:w-32" />
           </div>
 
           <div className="hidden lg:flex items-center  md:flex-nowrap md:whitespace-nowrap lg:gap-20">
@@ -100,7 +100,7 @@ function NavBar() {
               <Link to="/login">Login</Link>
               <Link to="/signUp">SignUp</Link>
               <Link to="/PostAJob" className="font-normal">
-                <button className="bg-[var(--primary)] text-white px-4 py-2 rounded-[10px]">
+                <button className="bg-[var(--primary)] text-white px-4 py-2 rounded-[10px] hover:bg-[var(--light-primary)] transition delay-100 duration-300 ease-out hover:scale-95">
                   Post A Job{" "}
                 </button>
               </Link>

@@ -1,10 +1,9 @@
 import {
-  videoThumbNail,
   worldMap,
 } from "../constants/images";
-import { FaPlay } from "react-icons/fa6";
 import { ImQuotesLeft } from "react-icons/im";
 import { ImQuotesRight } from "react-icons/im";
+import VideoCard from "./reusable/VideoCard";
 
 function AboutUs() {
   return (
@@ -39,14 +38,14 @@ function AboutUs() {
             </p>
           </div>
         </div>
-        <div className="flex justify-between mx-4 md:mx-8 flex-col-reverse lg:flex-row gap-5 xl:gap-2 items-center lg:-mt-25 xl:-mt-60 mt-5 md:mt-10">
-          <div className="xl:max-w-md mx- xl:px-4 xl:mx-12 mt-5 md:w-auto  lg:w-lg text-start justify-center  md:items-center ">
+        <div className="flex mx-4 md:mx-8 flex-col-reverse lg:flex-row gap-5 xl:gap-2 items-center justify-center xl:-mt-25 mt-5 md:mt-10">
+          <div className="xl:max-w-md mx- xl:px-4 xl:mx-12  md:w-auto  lg:w-lg text-start justify-center  md:items-center">
             
             <span>
               <ImQuotesLeft className="text-[var(--primary)] size-12 lg:size-20" />
             </span>{" "}
             {""}
-            <h2 className="quoted-text flex text-[#CACACA] font-bold xs:text-[32px] text-[28px] md:text-3xl xl:text-4xl leading-[1.5] inline ">
+            <h2 className="quoted-text flex text-[#CACACA] font-bold xs:text-[32px] text-[28px] md:text-3xl xl:text-4xl leading-[1.5] inline">
               We created a product
               <br className="md:hidden" /> that connects People{" "}
               <br className="md:hidden" />
@@ -56,15 +55,8 @@ function AboutUs() {
             </h2>
           </div>
 
-          <div className="relative">
-            <video
-              src={videoThumbNail}
-              poster={videoThumbNail}
-              className=" w-screen h-auto lg:size-150 border-[var(--primary)]  rounded-2xl max-w-"
-            ></video>
-            <i className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer hover:scale-90 transition delay-100 duration-300 ease-out items-center  ">
-              {<FaPlay className="w-12 h-12 md:w-24 md:h-24" />}
-            </i>
+          <div className="relative ">
+            <VideoCard />
           </div>
         </div>
       </div>
@@ -73,3 +65,4 @@ function AboutUs() {
 }
 
 export default AboutUs;
+
