@@ -1,3 +1,4 @@
+Kemi-HomeScreen-Fix
 export {default as mainLogo} from "../images/mainLogo.svg"
 export {default as globe} from "../images/globe.svg"
 export {default as RingOne} from "../images/RingOne.svg"
@@ -14,6 +15,7 @@ export {default as perfectMatchPhone} from "../images/perfectMatchPhone.svg";
 export {default as successPhone} from "../images/successPhone.svg";
 
 //ABOUT US SECTION Images
+//export {default as RingTwo} from "../images/RingTwo.svg"
 export {default as worldMap} from "../images/worldMap.svg";
 export {default as videoThumbNail} from "../images/videoThumbNail.png";
 
