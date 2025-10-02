@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import AlmostDone from "./AlmostDone";
+import {logo} from "../../../../constants/images/logo.svg";
+import {ring} from "../../../../constants/images/RingTwo.svg";
 
 const BriefForm = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -17,11 +19,11 @@ const BriefForm = () => {
     <div className="relative min-h-screen bg-white text-gray-900 overflow-hidden">
 
         <div className="relative max-w-2xl mx-auto px-6 py-5 ml-16 pt-15">
-        <img src="src\constants\images\logo.svg" alt="Gywde" className="h-10" />
+        <img src={logo} alt="Gywde" className="h-10" />
       </div>
 
       <img
-        src="src\constants\images\RingTwo.svg"
+        src={ring}
         alt="Blue ring background"
         className="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 opacity-50"
       />
