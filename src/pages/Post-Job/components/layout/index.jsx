@@ -1,6 +1,6 @@
 import React from "react";
-import {logo} from "../../../../constants/images/logo.svg";
-import {ring} from "../../../../constants/images/RingTwo.svg";
+import logo from "../../../../constants/images/logo.svg";
+import ring from "../../../../constants/images/RingTwo.svg";
 
 const Layout = ({ step, nextStep, prevStep, handleSubmit, children }) => {
   return (

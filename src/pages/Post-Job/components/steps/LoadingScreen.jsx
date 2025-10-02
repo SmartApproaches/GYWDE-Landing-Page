@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import {logo} from "../../../../constants/images/logo.svg";
-import {ring} from "../../../../constants/images/RingTwo.svg";
+import logo from "../../../../constants/images/logo.svg";
+import ring from "../../../../constants/images/RingTwo.svg";
 
 
 const LoadingScreen = () => {

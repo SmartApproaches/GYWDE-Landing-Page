@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import AlmostDone from "./AlmostDone";
-import {logo} from "../../../../constants/images/logo.svg";
-import {ring} from "../../../../constants/images/RingTwo.svg";
+import logo from "../../../../constants/images/logo.svg";
+import ring from "../../../../constants/images/RingTwo.svg";
 
 const BriefForm = () => {
   const [submitted, setSubmitted] = useState(false);
