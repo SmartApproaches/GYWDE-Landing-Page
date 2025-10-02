@@ -4,14 +4,14 @@ const Layout = ({ step, nextStep, prevStep, handleSubmit, children }) => {
   return (
     <div className="relative min-h-screen bg-white text-gray-900 overflow-hidden">
       <img
-        src="src\pages\Post-Job\components\layout\assets\Ellipse 10.svg"
+        src="src\constants\images\RingTwo.svg"
         className="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 z-0"
         alt="Blue ring background element"
       />
 
       <div className="relative max-w-4xl md:max-w-5xl lg:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="mb-6">
-          <img src="src\pages\Post-Job\components\layout\assets\Logo.svg" alt="Gywde" className="h-8" />
+          <img src="src\constants\images\logo.svg" alt="Gywde" className="h-8" />
         </div>
 
         <h1 className="text-5xl font-extrabold leading-tight mb-3">

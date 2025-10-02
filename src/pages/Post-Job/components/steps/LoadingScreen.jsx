@@ -8,11 +8,11 @@ const LoadingScreen = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-white relative">
       <div className="absolute top-6 left-6 flex items-center space-x-2">
-        <img src="src/pages/Post-Job/assets/Logo.svg" alt="Gywde" className="h-6" />
+        <img src="src\constants\images\logo.svg" alt="Gywde" className="h-6" />
       </div>
 
       <img
-        src="src/pages/Post-Job/assets/Ellipse 10.svg"
+        src="src\constants\images\RingTwo.svg"
         className="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 opacity-50"
         alt="Blue ring background"
       />
