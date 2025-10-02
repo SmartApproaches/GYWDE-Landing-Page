@@ -1,4 +1,3 @@
-Kemi-HomeScreen-Fix
 export {default as mainLogo} from "../images/mainLogo.svg"
 export {default as globe} from "../images/globe.svg"
 export {default as RingOne} from "../images/RingOne.svg"
@@ -38,6 +37,16 @@ export {default as youtubeLogo} from "../images/youtubeLogo.svg";
 export {default as tiktokLogo} from "../images/tiktokLogo.svg";
 export {default as googlePlayFill} from "../images/googlePlayFill.svg";
 export {default as applePlayFill} from "../images/applePlayFill.svg";
+
+//export {default as RingTwo} from "../images/RingTwo.svg"
+
+// // ABOUT US SECTION Images
+export { default as worldMap } from "../images/worldMap.svg";
+export { default as videoThumbNail } from "../images/videoThumbNail.svg";
+export { default as logo } from "../images/logo.svg";
+export { default as globe } from "../images/globe.svg";
+export { default as RingOne } from "../images/RingOne.svg";
+export { default as RingTwo } from "../images/RingTwo.svg";
 
 //CategorCard icons
 export { default as fashionIcon } from "./fashion.svg";
