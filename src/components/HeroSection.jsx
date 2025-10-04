@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { globe } from "../constants/images";
 import { MdStarOutline } from "react-icons/md";
+import { motion } from "framer-motion";
 
 function HeroSection() {
   return (

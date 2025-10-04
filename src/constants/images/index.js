@@ -1,7 +1,7 @@
 export {default as mainLogo} from "../images/mainLogo.svg"
-export {default as globe} from "../images/globe.svg"
-export {default as RingOne} from "../images/RingOne.svg"
-export {default as RingTwo} from "../images/RingTwo.svg"
+// export {default as globe} from "../images/globe.svg"
+// export {default as RingOne} from "../images/RingOne.svg"
+// export {default as RingTwo} from "../images/RingTwo.svg"
 
 //GYWDE-HOME SECTION Images
 export {default as applePlay} from "../images/applePlay.svg";
@@ -15,8 +15,8 @@ export {default as successPhone} from "../images/successPhone.svg";
 
 //ABOUT US SECTION Images
 //export {default as RingTwo} from "../images/RingTwo.svg"
-export {default as worldMap} from "../images/worldMap.svg";
-export {default as videoThumbNail} from "../images/videoThumbNail.png";
+// export {default as worldMap} from "../images/worldMap.svg";
+// export {default as videoThumbNail} from "../images/videoThumbNail.png";
 
 // WhyChooseUs Images
 export {default as securePayment} from "../images/securePayment.svg";
