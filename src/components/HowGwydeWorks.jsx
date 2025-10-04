@@ -1,6 +1,6 @@
 import { useState } from "react"; 
 import { userManualIcon, pdfIcon, youtubeIcon } from "../constants/images";
-import { ChevronRight } from "lucide-react";
+import { LuChevronRight } from "react-icons/lu";
 
 const HowGwydeWorks = () => {
   // state to control visibility
